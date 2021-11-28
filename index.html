@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern1</title>
+</head>
+<body>
+    <script>
+            let n = prompt("Enter a number for generate a pattern");
+            let stars = "";
+
+            for (let i = 1; i <= n; i++) {
+           
+            for (let j = 1; j <= n - i; j++) {
+                stars += "&nbsp;"
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                stars += "*";
+                
+            }
+            stars += "<br/>";
+            }
+            document.write(stars);
+          
+           
+           </script>
+    
+    
+</body>
+</html>
